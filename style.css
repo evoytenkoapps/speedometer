@@ -1,6 +1,6 @@
 .background {
-    width: 100%;
-    height: 100vh;
+    width: 440px;
+    height: 440px;
     background-image: url(./assets/meter.png);
     background-repeat: no-repeat;
     position: relative;
