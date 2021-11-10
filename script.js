@@ -18,13 +18,12 @@ function setBackGroundColor(speed) {
     if (speed > 61 && speed <= 120) {
         color = 'orange'
     }
-    if (speed > 121 && speed <= 120) {
+    if (speed > 121 && speed <= SPEED_MAX) {
         color = 'red'
     }
 
     window.requestAnimationFrame(function () {
         document.querySelector('.background').style.backgroundColor = color
-        document.querySelector('.background').style.opacity = '0.2';
     });
 }
 
