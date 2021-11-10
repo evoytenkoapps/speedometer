@@ -1,1 +1,5 @@
-document.querySelector('.arrow').style.transform = 'rotate(45deg)';
+function setRotate(angle) {
+    document.querySelector('.arrow').style.transform = `rotate(${angle}deg)`;
+}
+
+setRotate(260)
