@@ -1,5 +1,12 @@
+const INIT_ANGLE = 260;
+
 function setRotate(angle) {
-    document.querySelector('.arrow').style.transform = `rotate(${angle}deg)`;
+    window.requestAnimationFrame(function () {
+        document.querySelector('.arrow').style.transform = `rotate(${angle}deg)`;
+    });
 }
 
-setRotate(260)
+setRotate(INIT_ANGLE)
+
+
+
