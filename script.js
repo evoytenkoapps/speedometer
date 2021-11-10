@@ -2,6 +2,7 @@ const MIN_ANGLE = -100;
 const MAX_ANGLE = 100;
 const SPEED_MIN = 0;
 const SPEED_MAX = 180;
+const TIME_OUT = 4000;
 
 function setRotate(angle) {
     window.requestAnimationFrame(function () {
@@ -18,7 +19,7 @@ setInterval(() => {
     const angle = MIN_ANGLE + moduleAngle;
     console.log("speed", speed, "angle", angle);
     setRotate(angle)
-}, 1000)
+}, TIME_OUT)
 
 
 function randomIntFromInterval(min, max) {
