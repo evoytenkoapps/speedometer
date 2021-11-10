@@ -16,6 +16,7 @@ setInterval(() => {
     const speedPercent = (speed / SPEED_MAX) * 100;
     const moduleAngle = (((MIN_ANGLE * -1) + MAX_ANGLE) / 100) * speedPercent;
     const angle = MIN_ANGLE + moduleAngle;
+    console.log("speed", speed, "angle", angle);
     setRotate(angle)
 }, 1000)
 
