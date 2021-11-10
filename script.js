@@ -10,6 +10,24 @@ function setRotate(angle) {
     });
 }
 
+function setBackGroundColor(speed) {
+    let color = ''
+    if (speed <= 60) {
+        color = 'green'
+    }
+    if (speed > 61 && speed <= 120) {
+        color = 'orange'
+    }
+    if (speed > 121 && speed <= 120) {
+        color = 'red'
+    }
+
+    window.requestAnimationFrame(function () {
+        document.querySelector('.background').style.backgroundColor = color
+        document.querySelector('.background').style.opacity = '0.2';
+    });
+}
+
 setRotate(MIN_ANGLE)
 
 setInterval(() => {
@@ -19,6 +37,7 @@ setInterval(() => {
     const angle = MIN_ANGLE + moduleAngle;
     console.log("speed", speed, "angle", angle);
     setRotate(angle)
+    setBackGroundColor(speed)
 }, TIME_OUT)
 
 
