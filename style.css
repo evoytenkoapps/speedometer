@@ -10,8 +10,9 @@
     position: absolute;
     background-image: url(./assets/dial.png);
     width: 55px;
-    height: 200px;
+    height: 177px;
     background-repeat: no-repeat;
-    top: 95px;
+    top: 126px;
     left: 193px;
+    transform-origin: 50% 83.61%;
 }
