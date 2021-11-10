@@ -18,8 +18,10 @@
 }
 
 .background {
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 360px;
+    top: 40px;
+    left: 40px;
     position: absolute;
     border-radius: 50%;
     opacity: 0.2;

@@ -10,7 +10,7 @@ function setRotate(angle) {
     });
 }
 
-function setBackGroundColor(speed) {
+function setBackgroundColor(speed) {
     let color = ''
     if (speed <= 60) {
         color = 'green'
@@ -21,6 +21,8 @@ function setBackGroundColor(speed) {
     if (speed > 121 && speed <= SPEED_MAX) {
         color = 'red'
     }
+
+    console.log("speed", speed, "color", color);
 
     window.requestAnimationFrame(function () {
         document.querySelector('.background').style.backgroundColor = color
@@ -36,7 +38,7 @@ setInterval(() => {
     const angle = MIN_ANGLE + moduleAngle;
     console.log("speed", speed, "angle", angle);
     setRotate(angle)
-    setBackGroundColor(speed)
+    setBackgroundColor(speed)
 }, TIME_OUT)
 
 
